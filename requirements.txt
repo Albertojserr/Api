@@ -1,3 +1,5 @@
 pipenv
 autopep8
+django
 Pillow
+django-filter

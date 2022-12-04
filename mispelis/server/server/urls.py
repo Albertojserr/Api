@@ -29,6 +29,7 @@ urlpatterns = [
     # Api routes
     path('api/', include('authentication.urls')),
     path('api/', include(router.urls)),
+    path('api/userfilms/', film_views.FilmUserViewSet.as_view())
 ]
 if settings.DEBUG:
     urlpatterns += static('/media/', document_root=settings.MEDIA_ROOT)
